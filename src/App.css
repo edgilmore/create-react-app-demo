@@ -7,6 +7,18 @@
   height: 40vmin;
 }
 
+.App-logo g {
+  fill: salmon;
+}
+
+.App-logo path {
+  stroke: palegoldenrod;
+  stroke-width: 10px;
+  fill: none;
+  stroke-dasharray: 35px 15px;
+  animation: orbit 1s infinite linear;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -21,7 +33,11 @@
 .App-link {
   color: #61dafb;
 }
-
+@keyframes orbit {
+  to {
+    stroke-dashoffset: 50px;
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
